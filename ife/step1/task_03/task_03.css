@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 16px/24px Verdana, Arial, "Microsoft Yahei", sans-serif;
+    color: #333;
+}
+a {
+    color: #00f;
+    text-decoration: none;
+}
+a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+.container {
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #999;
+    background: #eee;
+}
+.left-wrap {
+    float: left;
+    width: 200px;
+    border: 1px solid #999;
+    background: #fff;
+}
+.left-wrap img {
+    position: relative;
+    float: left;
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border: 1px solid #999;
+}
+.left-wrap span {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.main-wrap {
+    overflow: hidden;
+    margin: 0 140px 0 220px;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #fff;
+}
+.main-wrap h2 {
+    padding: 15px 0;
+    font-size: 24px;
+    border-bottom: 1px solid #eee;
+}
+.main-wrap p {
+    padding: 10px 0;
+}
+.main-wrap p img {
+    width: 100%;
+    max-width: 450px;
+}
+.main-wrap ul {
+    margin-left: 30px;
+    padding: 10px 0;
+}
+.right-wrap {
+    float: right;
+    width: 120px;
+    border: 1px solid #999;
+    background: #fff;
+}
+.right-wrap img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border: 1px solid #999;
+}
