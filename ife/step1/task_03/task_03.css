@@ -42,6 +42,7 @@ a:hover {
     font-weight: 700;
 }
 .main-wrap {
+    overflow: hidden;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #999;
@@ -82,7 +83,6 @@ a:hover {
 }
 @media (min-width:768px) {
     .main-wrap {
-        overflow: hidden;
         margin: 0 140px 0 220px;
     }
 }
