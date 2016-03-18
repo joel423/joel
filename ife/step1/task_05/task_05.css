@@ -59,6 +59,11 @@ article .author {
 article p {
     text-indent: 2em;
 }
+article img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
 article ul li {
     margin-left: -20px;
     list-style: none;
@@ -68,13 +73,13 @@ article ul li {
 figure {
     float: left;
     margin: 10px;
-    padding: 5px;
-    width: 130px;
+    padding: 10px;
+    width: 34.5%;
     border: 1px solid #ddd;
     text-align: center;
 }
 figure img {
-    width: 120px;
+    width: 100%;
     height: auto;
 }
 figcaption {
@@ -177,6 +182,11 @@ footer p {
     .article-wrap {
         float: left;
         margin-right: 410px;
+    }
+}
+@media (min-width:1200px) {
+    figure {
+        width: 16%;
     }
 }
 @media (min-width:768px) {
