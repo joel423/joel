@@ -180,7 +180,6 @@ footer p {
 }
 @media (min-width:768px) {
     .article-wrap {
-        float: left;
         margin-right: 410px;
     }
 }
