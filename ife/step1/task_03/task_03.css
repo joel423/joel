@@ -15,9 +15,9 @@ a:hover {
     text-decoration: underline;
 }
 .container {
+    overflow: hidden;
     margin: 20px;
     padding: 20px;
-    overflow: hidden;
     border: 1px solid #999;
     background: #eee;
 }
