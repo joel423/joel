@@ -22,8 +22,7 @@ a:hover {
     background: #eee;
 }
 .left-wrap {
-    float: left;
-    width: 200px;
+    overflow: hidden;
     border: 1px solid #999;
     background: #fff;
 }
@@ -43,8 +42,7 @@ a:hover {
     font-weight: 700;
 }
 .main-wrap {
-    overflow: hidden;
-    margin: 0 140px 0 220px;
+    margin-top: 20px;
     padding: 20px;
     border: 1px solid #999;
     background: #fff;
@@ -66,15 +64,37 @@ a:hover {
     padding: 10px 0;
 }
 .right-wrap {
-    float: right;
-    width: 120px;
+    margin-top: 20px;
     border: 1px solid #999;
     background: #fff;
 }
 .right-wrap img {
-    display: block;
     width: 80px;
     height: 80px;
     margin: 20px;
     border: 1px solid #999;
+}
+@media (min-width:768px) {
+    .left-wrap {
+        float: left;
+        width: 200px;
+    }
+}
+@media (min-width:768px) {
+    .main-wrap {
+        overflow: hidden;
+        margin: 0 140px 0 220px;
+    }
+}
+@media (min-width:768px) {
+    .right-wrap {
+        float: right;
+        width: 120px;
+        margin: 0;
+    }
+    .right-wrap img {
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
 }
