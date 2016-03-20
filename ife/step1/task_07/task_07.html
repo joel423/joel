@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>任务七：实现常见的技术产品官网的页面架构及样式布局</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/task_07.css" rel="stylesheet">
+    <link href="assets/select.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="assets/navbar.js"></script>
+    <!--[if lt IE 9]>
+<script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+        <div class="container"><span class="skiplink-text">Skip to main content</span></div>
+    </a>
+    <!-- header -->
+    <header class="aw-top-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a><img src="assets/logo.png" alt="logo"></a>
+            </div>
+            <nav class="hidden-xs collapse navbar-collapse">
+                <ul>
+                    <li><a class="active">首页</a></li>
+                    <li><a>最新活动</a></li>
+                    <li><a>项目介绍</a></li>
+                    <li><a>爱心社区</a></li>
+                    <li><a>关于我们</a></li>
+                    <li class="sign"><a>登录</a></li>
+                </ul>
+            </nav>
+            <div class="side-nav animate-hide">
+                <ul>
+                    <li><a>首页</a></li>
+                    <li><a>最新活动</a></li>
+                    <li><a>项目介绍</a></li>
+                    <li><a>爱心社区</a></li>
+                    <li><a>关于我们</a></li>
+                    <li><a>登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="container-fluid banner">
+        <div class="container">
+            <h2>Time of new life</h2>
+            <p>新时代，年轻的人们让我们一起
+                <br>体验新生活，享受新生活</p>
+            <a class="experience">开始体验</a>
+        </div>
+    </div>
+    <!-- logotype -->
+    <div class="container logotype">
+        <div class="col-xs-12 col-sm-3"><i class="logotype-icon-1"></i><span>打造全新世界观，让你更爱你的生活</span></div>
+        <div class="col-xs-12 col-sm-3"><i class="logotype-icon-2"></i><span>丰富多彩的公益活动，发挥新世界的主人公意识</span></div>
+        <div class="col-xs-12 col-sm-3"><i class="logotype-icon-3"></i><span>时尚的新理念，超前体验未知的生活</span></div>
+        <div class="col-xs-12 col-sm-3"><i class="logotype-icon-4"></i><span class="last">完善的培养机制，培养你全新的世界观</span></div>
+    </div>
+    <!-- question -->
+    <div class="container-fluid question">
+        <span class="icon-book"></span>
+        <h2>关于新世界，你不知道的还有什么？</h2>
+    </div>
+    <!-- search -->
+    <div class="container-fluid search">
+        <div class="container">
+            <h2>查找新世界城市活动信息</h2>
+            <div class="line"></div>
+            <p>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
+            <form>
+                <div class="col-sm-3">
+                    <select class="cs-select cs-skin-elastic">
+                        <option value="中国" selected>中国</option>
+                        <option value="美国">美国</option>
+                        <option value="德国">德国</option>
+                        <option value="日本">日本</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="cs-select cs-skin-elastic">
+                        <option value="北京市" selected>北京市</option>
+                        <option value="天津市">天津市</option>
+                        <option value="河北省">河北省</option>
+                        <option value="陕西省">陕西省</option>
+                        <option value="内蒙古自治区">内蒙古自治区</option>
+                        <option value="辽宁省">辽宁省</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="cs-select cs-skin-elastic">
+                        <option value="海淀区" selected>海淀区</option>
+                        <option value="朝阳区">朝阳区</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <input type="submit" value="搜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;索">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- huodong -->
+    <div class="container-fluid huodong">
+        <div class="container">
+            <div class="col-xs-6 col-sm-3 huodong-wrap">
+                <div class="img-down">
+                    <h2>北&nbsp;&nbsp;&nbsp;京&nbsp;&nbsp;&nbsp;活&nbsp;&nbsp;&nbsp;动</h2>
+                    <p>新社区大联盟</p>
+                </div>
+                <div class="huodong-img">
+                    <a><img src="assets/huodong_1.jpg" class="img-responsive center-block" alt="北京活动"></a>
+                </div>
+                <div class="img-up">
+                    <h2>北京活动</h2>
+                    <p>新社区大联盟</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 huodong-wrap">
+                <div class="img-down">
+                    <h2>上&nbsp;&nbsp;&nbsp;海&nbsp;&nbsp;&nbsp;活&nbsp;&nbsp;&nbsp;动</h2>
+                    <p>夜上海新景观探索</p>
+                </div>
+                <div class="huodong-img huodong-current">
+                    <a><img src="assets/huodong_2.jpg" class="img-responsive center-block" alt="上海活动"></a>
+                </div>
+                <div class="img-up">
+                    <h2>上海活动</h2>
+                    <p>夜上海新景观探索</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 huodong-wrap">
+                <div class="img-down">
+                    <h2>深&nbsp;&nbsp;&nbsp;圳&nbsp;&nbsp;&nbsp;活&nbsp;&nbsp;&nbsp;动</h2>
+                    <p>全新海岸线观点站</p>
+                </div>
+                <div class="huodong-img">
+                    <a><img src="assets/huodong_3.jpg" class="img-responsive center-block" alt="深圳活动"></a>
+                </div>
+                <div class="img-up">
+                    <h2>深圳活动</h2>
+                    <p>全新海岸线观点站</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 huodong-wrap">
+                <div class="img-down">
+                    <h2>香&nbsp;&nbsp;&nbsp;港&nbsp;&nbsp;&nbsp;活&nbsp;&nbsp;&nbsp;动</h2>
+                    <p>奢侈消费大派送</p>
+                </div>
+                <div class="huodong-img">
+                    <a><img src="assets/huodong_4.jpg" class="img-responsive center-block" alt="香港活动"></a>
+                </div>
+                <div class="img-up">
+                    <h2>香港活动</h2>
+                    <p>奢侈消费大派送</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- time -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 time-one">
+                <div class="valign-center">
+                    <h2>新世界</h2>
+                    <h3>TIME</h3>
+                    <p>@新世界 - 北京</p>
+                    <p>2016.04.01</p>
+                </div>
+                <div class="triangle"></div>
+            </div>
+            <div class="col-sm-4 time-two">
+                <div class="valign-center" id="haha3">
+                    <ul>
+                        <li style="display: block;">
+                            <h2>新世界/<span>01</span></h2>
+                            <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                            <a class="more">更多详情</a>
+                        </li>
+                        <li style="display: none;">
+                            <h2>新世界/<span>02</span></h2>
+                            <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                            <a class="more">更多详情</a>
+                        </li>
+                        <li style="display: none;">
+                            <h2>新世界/<span>03</span></h2>
+                            <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                            <a class="more">更多详情</a>
+                        </li>
+                    </ul>
+                    <ol class="circle-ol">
+                        <li>
+                            <a class="hover active" onclick="haha3.showIndex(0);"></a>
+                        </li>
+                        <li>
+                            <a class="hover" onclick="haha3.showIndex(1);"></a>
+                        </li>
+                        <li>
+                            <a class="hover" onclick="haha3.showIndex(2);"></a>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- woman -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 woman-one">
+                <div class="valign-center">
+                    <p>新时代</p>
+                    <p>关于爱生活的我们</p>
+                    <div class="line"></div>
+                    <a class="more">查看更多</a>
+                </div>
+            </div>
+            <div class="col-sm-4 woman-two">
+                <div class="valign-center">
+                    <p>新时代</p>
+                    <p>关于爱生活的我们</p>
+                    <div class="line"></div>
+                    <a class="more">查看更多</a>
+                </div>
+            </div>
+            <div class="col-sm-4 woman-three">
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- volunteer -->
+    <div class="container-fluid volunteer">
+        <div class="container">
+            <h2>成为我们的志愿者</h2>
+            <div class="line"></div>
+            <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情
+                <br>那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+        </div>
+        <div class="container inner-wrap">
+            <div class="col-xs-12 col-sm-4 agreement">
+                <ul>
+                    <li>
+                        <h3><a>新世界志愿者协议</a></h3>
+                        <p>加入新世界志愿者的人员必须遵守中华人民共共和国的相关法律法规，并且本着平等资源的原则 ......</p>
+                        <a href="#" class="more">more</a>
+                    </li>
+                    <li>
+                        <h3><a>新世界志愿者权利</a></h3>
+                        <p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在地新世界活动的优先参与资格 ......</p>
+                        <a href="#" class="more">more</a>
+                    </li>
+                    <li>
+                        <h3><a>更多条款</a></h3>
+                        <a href="#" class="more">more</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-7 infomation">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="text" placeholder="姓名：">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="text" placeholder="年龄：">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="text" placeholder="联系方式：">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="text" placeholder="联系地址：">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <textarea placeholder="请简单描述您梦想的生活："></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <input type="submit" value="提交申请">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="container-fluid contact">
+        <h2>联系我们</h2>
+        <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯
+            <br>也可以通过以下任何方式关注我们动态</p>
+        <form>
+            <input type="email" placeholder="someone@email.com">
+            <input type="submit" value="提&nbsp;交">
+        </form>
+        <p>
+            <a><span class="icon-qq"></span></a>
+            <a><span class="icon-weibo"></span></a>
+            <a><span class="icon-twitter"></span></a>
+            <a><span class="icon-dribbble"></span></a>
+        </p>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="container">
+            <p>&copy;2016新世界<a href="#">Back to top</a></p>
+        </div>
+    </div>
+    <script src="assets/classie.js"></script>
+    <script src="assets/selectFx.js"></script>
+    <script>
+        (function() {
+            [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {
+                new SelectFx(el);
+            });
+        })();
+    </script>
+    <script>
+        function scrollNews(selector, Entry, time, StartIndex) {
+            var _self = this;
+            this.selector = selector;
+            this.Entry = Entry;
+            this.time = time;
+            this.i = StartIndex || 0;
+            this.Count = $(this.selector + " ul li").length;
+            $(this.selector + " ul li").hide(); //全部隐藏
+            $(this.selector + " ul li").eq(this.i).show(); //第i个显示
+            $(this.selector).bind("mouseenter", function() {
+                    if (_self.sI) {
+                        clearInterval(_self.sI);
+                    }
+                }).bind("mouseleave", function() {
+                    _self.showIndex(_self.i++);
+                })
+                /*生成激活OL项目*/
+            for (var j = 0; j < this.Count; j++)
+                $(this.selector + " .circle-ol").append('');
+            $(this.selector + " ol li a").eq(this.i).addClass("active");
+            this.sI = setInterval(this.Entry + ".showIndex(null)", this.time);
+
+            this.Getselector = function() {
+                return this.selector;
+            }
+            this.showIndex = function(index) {
+                this.i++; //显示下一个
+                if (this.sI) {
+                    clearInterval(this.sI);
+                }
+                this.sI = setInterval(this.Entry + ".showIndex()", this.time);
+                if (index != null) {
+                    this.i = index;
+                }
+                if (this.i == this.Count)
+                    this.i = 0;
+                $(this.selector + " ul li").hide();
+                $(this.selector + " ul li").eq(this.i).slideDown();
+                $(this.selector + " ol li a").removeClass("active");
+                $(this.selector + " ol li a").eq(this.i).addClass("active");
+            }
+        }
+        var haha3 = new scrollNews("#haha3", "haha3", 7000, 0);
+    </script>
+</body>
+</html>
